@@ -6,12 +6,12 @@ using Soenneker.Spotify.OpenApiClientUtil.Abstract;
 namespace Soenneker.Spotify.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers the lazily initialized Spotify Web API client.
 /// </summary>
 public static class SpotifyOpenApiClientUtilRegistrar
 {
     /// <summary>
-    /// Adds <see cref="SpotifyOpenApiClientUtil"/> as a singleton service. <para/>
+    /// Adds the Spotify API client utility as a singleton service. <para/>
     /// </summary>
     public static IServiceCollection AddSpotifyOpenApiClientUtilAsSingleton(this IServiceCollection services)
     {
@@ -22,7 +22,7 @@ public static class SpotifyOpenApiClientUtilRegistrar
     }
 
     /// <summary>
-    /// Adds <see cref="SpotifyOpenApiClientUtil"/> as a scoped service. <para/>
+    /// Adds the Spotify API client utility as a scoped service backed by the singleton HTTP client provider. <para/>
     /// </summary>
     public static IServiceCollection AddSpotifyOpenApiClientUtilAsScoped(this IServiceCollection services)
     {
