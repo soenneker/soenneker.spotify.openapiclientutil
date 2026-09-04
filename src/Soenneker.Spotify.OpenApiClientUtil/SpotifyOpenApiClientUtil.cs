@@ -12,6 +12,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Spotify.OpenApiClientUtil;
 
+/// <inheritdoc cref="ISpotifyOpenApiClientUtil" />
 public sealed class SpotifyOpenApiClientUtil : ISpotifyOpenApiClientUtil
 {
     private readonly AsyncSingleton<SpotifyOpenApiClient> _client;
