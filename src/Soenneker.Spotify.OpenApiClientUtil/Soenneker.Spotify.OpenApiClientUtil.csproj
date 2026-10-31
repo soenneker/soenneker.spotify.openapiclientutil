@@ -47,6 +47,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Spotify.HttpClients" Version="11.0.161" />
-        <PackageReference Include="Soenneker.Spotify.OpenApiClient" Version="11.0.110" />
+        <PackageReference Include="Soenneker.Spotify.OpenApiClient" Version="11.0.112" />
     </ItemGroup>
 </Project>
